@@ -24,6 +24,10 @@
             "pattern": "hermesadvisorypartners.co",
             "custom_domain": true,
         },
+		{
+            "pattern": "www.hermesadvisorypartners.co",
+            "custom_domain": true,
+        },
     ],
 	/**
 	 * Bindings
