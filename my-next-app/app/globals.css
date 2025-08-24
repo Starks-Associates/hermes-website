@@ -1,8 +1,14 @@
+@import "tailwindcss";
+
 @layer theme, base, components, utilities;
 
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+    --color-primary: #dfc72f;
+}
 
 @layer base {
     @font-face {
