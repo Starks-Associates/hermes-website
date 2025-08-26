@@ -19,18 +19,16 @@ export async function POST(req: Request) {
 
         if (!process.env.RESEND_API_KEY) {
             console.log("Resend API key is not configured");
-
             return new Response(JSON.stringify({ error: "Error occurred" }), { status: 500 });
         }
 
-        const { name, email, phone, company_name, message } = validatedData;
-
+        const mail = await render(await EmailTemplate(validatedData))
         const resend = new Resend(process.env.RESEND_API_KEY);
         const data = await resend.emails.send({
-            from: "site@send.hermesadvisorypartners.co",
+            from: "Hermes <send@hermesadvisorypartners.co>",
             to: "phillip-hope@starksassociate.com", // "info@hermesadvisorypartners.co",
             subject: "Contact Form Submission",
-            react: await render(await EmailTemplate({ name, email, phone, company_name, message })),
+            react: mail,
         });
 
         return Response.json(data);
