@@ -17,4 +17,12 @@ class PagesController extends Controller
     public function process(){
         return view('process');
     }
+
+    public function about(){
+        return view('about-us');
+    }
+
+     public function contact(){
+        return view('contact');
+    }
 }
