@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+    --color-primary: #dfc72f;
+}
+
+@layer base {
+    @font-face {
+        font-family: 'TT Hoves';
+        src: url('/fonts/TT_Hoves_Regular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'TT Hoves';
+        src: url('/fonts/TT_Hoves_Medium.otf') format('opentype');
+        font-weight: 500;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'TT Hoves';
+        src: url('/fonts/TT_Hoves_Medium_Italic.otf') format('opentype');
+        font-weight: 500;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'TT Hoves';
+        src: url('/fonts/TT_Hoves_Bold.otf') format('opentype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    body {
+        font-family: 'TT Hoves', sans-serif;
+    }
+    button {
+        cursor: pointer;
+    }
+}
