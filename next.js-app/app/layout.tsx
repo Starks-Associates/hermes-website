@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://hermesadvisorypartners.co'),
     title: "Hermes Advisory Partner",
     description:
         "Hermes Advisory is an African-focused financial and investment advisory company. We handle the end-end process of building successful African ventures for both business owners and investors alike.",
