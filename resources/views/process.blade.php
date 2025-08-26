@@ -1,32 +1,32 @@
-@extends('layouts.app',['page'=>'process'])
+@extends('layouts.app',['page'=>'Process'])
 @section('content')
-<div class="h-[700px] flex flex-col justify-end relative" style="background: url('/images/process.svg') no-repeat; background-size: cover; background-position: top;">
-		<div class="max-w-7xl text-white">
-			<div class="max-w-4xl pl-40 pb-64">
-				<p class="font-bold text-7xl">
+<div class="h-[500px] md:h-[700px] flex flex-col justify-end relative" style="background: url('/images/process.svg') no-repeat; background-size: cover; background-position: top;">
+		<div class="max-w-7xl px-6 md:px-0 md:mx-0 text-white">
+			<div class="max-w-4xl md:pl-52 pb-72 md:pb-64">
+				<p class="font-bold text-3xl md:text-7xl">
 					Our <br/> Process
 				</p>
 			</div>
 		</div>
 	</div>
 	<div class=" -mt-48 z-10 relative">
-		<div class="bg-white rounded-tr-[200px] mt-72 pb-32">
-			<div class="max-w-7xl mx-auto">
-				<div class="flex items-center space-x-[70px]">
+		<div class="bg-white rounded-tr-[200px]">
+			<div class="max-w-7xl px-6 md:px-0 mx-auto  pt-24 pb-32">
+				<div class="flex flex-col md:flex-row md:items-center space-x-[70px]">
 					<div>
 						<img src="/images/process1.jpg" class="w-[699px]"/>
 					</div>
-					<div class="max-w-sm">
-						<p class="text-5xl font-bold">Stellar process holds the key</p>
+					<div class="max-w-xs md:max-w-sm mt-10 md:mt-0">
+						<p class="text-3xl md:text-5xl font-bold">Stellar process holds the key</p>
 						<p class="mt-3">
 							We strive to bring stellar services to all clients, and we have simplified our transaction phases into multiple simple steps to help guide our client and partners along.
 						</p>
 					</div>
 				</div>
-				<div class="grid grid-cols-8 mt-20">
-					<div class="col-span-8 grid grid-cols-6 gap-x-4 gap-y-8">
-						<div class="max-w-md col-span-6">
-							<p class="text-3xl font-semibold">Deep Africa-linked relationships</p>
+				<div class="grid grid-cols-8 mt-12 md:mt-20">
+					<div class="col-span-8 grid grid-cols-2 md:grid-cols-6 gap-x-4 gap-y-8">
+						<div class="md:max-w-md col-span-2 md:col-span-6">
+							<p class="text-2xl md:text-3xl font-semibold">Deep Africa-linked relationships</p>
 						</div>
 						<div class="flex items-center col-span-2 space-x-4 mt-6">
 							<div class="flex items-center">
