@@ -22,13 +22,13 @@ export async function POST(req: Request) {
             return new Response(JSON.stringify({ error: "Error occurred" }), { status: 500 });
         }
 
-        const mail = await render(await EmailTemplate(validatedData))
+        const mail = await render(await EmailTemplate(validatedData));
         const resend = new Resend(process.env.RESEND_API_KEY);
         const data = await resend.emails.send({
             from: "Hermes <send@hermesadvisorypartners.co>",
-            to: "phillip-hope@starksassociate.com", // "info@hermesadvisorypartners.co",
+            to: "info@hermesadvisorypartners.co",
             subject: "Contact Form Submission",
-            react: mail,
+            html: mail,
         });
 
         return Response.json(data);

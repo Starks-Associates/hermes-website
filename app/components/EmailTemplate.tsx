@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Html, Head, Body, Container, Text, Hr } from "@react-email/components";
 
 interface EmailTemplateProps {
     name: string;
@@ -9,25 +10,32 @@ interface EmailTemplateProps {
 }
 
 export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({ name, email, phone, company_name, message }) => (
-    <div>
-        <h1>Contact Form Submission</h1>
-        <p>
-            <strong>Name:</strong> {name}
-        </p>
-        <p>
-            <strong>Email:</strong> {email}
-        </p>
-        {phone && (
-            <p>
-                <strong>Phone Number:</strong> {phone}
-            </p>
-        )}
-
-        <p>
-            <strong>Company Name:</strong> {company_name}
-        </p>
-        <p>
-            <strong>Message:</strong> {message}
-        </p>
-    </div>
+    <Html>
+        <Head />
+        <Body style={{ fontFamily: "sans-serif", backgroundColor: "#f6f6f6", padding: "20px" }}>
+            <Container style={{ backgroundColor: "#ffffff", margin: "0 auto", padding: "20px", borderRadius: "8px", border: "1px solid #eee" }}>
+                <Text style={{ fontSize: "24px", fontWeight: "bold", color: "#333" }}>Contact Form Submission</Text>
+                <Hr style={{ borderColor: "#eee", margin: "20px 0" }} />
+                <Text style={{ fontSize: "16px", color: "#555" }}>
+                    <strong>Name:</strong> {name}
+                </Text>
+                <Text style={{ fontSize: "16px", color: "#555" }}>
+                    <strong>Email:</strong> {email}
+                </Text>
+                {phone && (
+                    <Text style={{ fontSize: "16px", color: "#555" }}>
+                        <strong>Phone Number:</strong> {phone}
+                    </Text>
+                )}
+                {company_name && (
+                    <Text style={{ fontSize: "16px", color: "#555" }}>
+                        <strong>Company Name:</strong> {company_name}
+                    </Text>
+                )}
+                <Text style={{ fontSize: "16px", color: "#555" }}>
+                    <strong>Message:</strong> {message}
+                </Text>
+            </Container>
+        </Body>
+    </Html>
 );

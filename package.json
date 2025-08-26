@@ -16,6 +16,7 @@
     "dependencies": {
         "@hookform/resolvers": "^5.2.1",
         "@opennextjs/cloudflare": "^1.6.5",
+        "@react-email/components": "^0.5.1",
         "@react-email/render": "^1.2.1",
         "next": "15.4.6",
         "react": "19.1.0",
