@@ -1,6 +1,9 @@
-"use client";
+import { Metadata } from "next";
 
-import Link from "next/link";
+export const metadata: Metadata = {
+    title: "Our Process - Hermes Advisory Partner",
+    description: "Understand the streamlined process Hermes follows to deliver stellar services and guide clients through transactions",
+};
 
 const Process = () => {
     return (
@@ -27,7 +30,7 @@ const Process = () => {
                     <div className="max-w-7xl px-6 md:px-0 mx-auto  pt-24 pb-32">
                         <div className="flex flex-col md:flex-row md:items-center space-x-[70px]">
                             <div>
-                                <img src="/images/process1.jpg" className="w-[699px]" />
+                                <img src="/images/process1.jpg" className="w-[699px]" alt="" />
                             </div>
                             <div className="max-w-xs md:max-w-sm mt-10 md:mt-0">
                                 <p className="text-3xl md:text-5xl font-bold">Stellar process holds the key</p>

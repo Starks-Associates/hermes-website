@@ -14,12 +14,16 @@
         "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts"
     },
     "dependencies": {
+        "@hookform/resolvers": "^5.2.1",
         "@opennextjs/cloudflare": "^1.6.5",
+        "@react-email/render": "^1.2.1",
         "next": "15.4.6",
         "react": "19.1.0",
         "react-dom": "19.1.0",
         "react-email": "^4.2.8",
-        "resend": "^6.0.1"
+        "react-hook-form": "^7.62.0",
+        "resend": "^6.0.1",
+        "zod": "^4.1.3"
     },
     "devDependencies": {
         "@eslint/eslintrc": "^3",

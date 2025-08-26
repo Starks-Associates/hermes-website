@@ -1,6 +1,10 @@
-"use client";
-
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Services - Hermes Advisory Partner",
+    description: "Explore the range of bespoke services offered by Hermes for capital raise and business growth",
+};
 
 const Services = () => {
     return (

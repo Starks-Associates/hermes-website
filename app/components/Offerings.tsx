@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const Offerings = () => {
     const [offering, setOffering] = useState("small");
+
     return (
         <div className="bg-[#f3f0e1] py-12 md:py-24 mt-12 md:mt-20">
             <div className="max-w-7xl px-6 md:px-0 mx-auto">
